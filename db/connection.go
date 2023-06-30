@@ -12,7 +12,7 @@ func OpenConnection() (*sql.DB, error) {
 	conf := configs.GetDB()
 
 	stringConnection := fmt.Sprintf(
-		"host=%s port=%s user=%s password=%s dbname=%s sslmode=disabled",
+		"host=%s port=%s user=%s password=%s dbname=%s sslmode=disable",
 		conf.Host, conf.Port, conf.User, conf.Pass, conf.Database,
 	)
 
